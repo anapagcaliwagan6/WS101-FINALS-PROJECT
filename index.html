@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text">AnaMarie</div>
+
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+
+                    <ul class="navlinks">
+                         <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="hero-dp">
+                <img src="img/picture.png" alt="">
+            </div>
+            <div class="hero-text">
+                <h5> Hi I'm <span class=""> Frontend Developer</span></h5>
+                <h1>AnaMarie Pagcaliwagan</h1>
+                <p>In this world of Designing</p>
+                <br></br>
+                <br></br>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>Being a frontend developer has an invaluable lessons about user experience, responsive design, teamwork, and continuous learning. These insights have not only enhanced my technical skills but also shaped my mindset as a professional in this dynamic industry.</p>
+                <br></br>
+                
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/aboutpic.jpg">
+                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <br></br>
+                <p> Good day, I'm gonna tell you who am I. I'm a determining person and love to try something new or explore that may help me in this profession. In this world of designing I still learning and give myself a time to carry it and do my best to it. I have a knowledge in these two languages HTML and CSS.</p>
+                 <br></br>
+                <span></span>
+                <p>The Motivation the joy of creating beautiful websites, solving design challenges, and collaborating with talented individuals. It is this passion that fuels my drive for continuous learning and growth in this ever-evolving field.</p>
+                <br></br>
+                <span></span>
+                <div class="pic">
+                    <img src="img/html.png" height="200" width="200">
+                    <img src="img/css.png" height="200" width="200">
+                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="works">
+    <div class="container">
+        <h1 class="sub-title">WORKS</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work1.png">
+                <div class="layer">
+                    <h3>DOM Color Changer</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work2.png">
+                <div class="layer">
+                    <h3>Online Resume</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work3.png">
+                <div class="layer">
+                    <h3>CRUD Todo List</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work4.png">
+                <div class="layer">
+                    <h3>Working Calculator</h3>
+                </div>
+            </div>
+            </div>
+            
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="column">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT MY SOCIALS</h1>
+                <form>
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-twitter"></i></a>
+                    <i class="material-icons" style="font-size:30px;color:white">mail</i>
+                </div>
+            </div>
+            <p>This is my Gmail Account</p> <span></span><p>anamariepagcaliwagan8@gmail.com</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+ 
+</body>
+</html>
